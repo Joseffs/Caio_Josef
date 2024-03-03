@@ -1,33 +1,23 @@
 @tailwind base;
+@font-face {
+  font-family: 'KodeMono';
+  src: url('../fonts/KodeMono-VariableFont_wght.ttf') format('truetype');
+}
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+--bg-slate-50: rgb(248 250 252);
+--bg-slate-700: rgb(30 41 59);
+--bg-slate-950: rgb(2 6 23);
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  color: var(--bg-slate-50);
+  background: var(--bg-slate-950);
+  font-family:'KodeMono';
 }
