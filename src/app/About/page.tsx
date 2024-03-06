@@ -28,9 +28,13 @@ export default function About() {
             <SiMysql size={25}/>
           </div>
           <div className='sm:w-44 w-full h-full flex flex-col justify-start items-start'>
-            <h4 className='w-full h-10 text-sm text-slate-500 flex justify-center items-center border-b border-slate-900'>
+            <h4 className='w-full h-[10%] text-sm text-slate-500 flex justify-center items-center border-b border-slate-900'>
               _About
             </h4>
+            <div className='w-full h-[90%] personal bg-slate-500'/>
+          </div>
+          <div>
+
           </div>
         
         </div>
