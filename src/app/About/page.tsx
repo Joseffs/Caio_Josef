@@ -3,11 +3,10 @@
 
 // Components Reutilizaveis
 import Section from '@/utils/Section'
-// Components Home
-
+// Components About
+import TabContainer from './components/TabContainer'
 // react-icons
 import { SiHtml5, SiSass, SiReact, SiTailwindcss, SiTypescript, SiFigma, SiNodedotjs, SiMysql } from "react-icons/si"
-import TabContainer from './TabContainer'
 // Styles Class Tailwind
 const Main =
   'relative py-10 w-full h-full flex md:flex-row flex-col justify-center items-center overflow-hidden'
