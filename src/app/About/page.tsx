@@ -28,17 +28,18 @@ export default function About() {
             <SiMysql size={25}/>
           </div>
           <div className='sm:w-44 w-full h-full flex flex-col justify-start items-start'>
-            <h4 className='w-full sm:h-[10%] h-[7vh] text-sm text-slate-500 flex justify-center items-center border-b border-slate-900'>
+            <h4 className='w-full h-[7%] text-sm text-slate-500 flex justify-center items-center border-b border-slate-900'>
               _About
             </h4>
-            <div className='w-full sm:h-[90%] h-0 personal bg-slate-500'/>
+            <div className='w-full sm:h-[93%] h-0 personal bg-slate-500'/>
           </div>  
         </div>
-        <div className='sm:mt-0 mt-[7vh] sm:pl-56 pl-0 w-full lg:w-4/5 h-[79vh] sm:h-full z-10'>
+        <div className='sm:mt-0 mt-[7vh] sm:pl-56 pl-0 w-full lg:w-3/5 h-[79vh] sm:h-full z-10'>
           <TabContainer />
         </div>
-        <div className='w-0 md:w-1/5 md:h-full h-0 bg-slate-900'>
-          
+        <div className='relative w-0 md:w-2/5 md:h-full h-0 border-l border-slate-900'>
+          <div className='absolute top-0 w-full h-[7%] text-sm text-slate-500 flex justify-center items-center border-b border-slate-900'/>
+          <div className='ml-[5%] w-[95%] h-full border-l border-slate-900'/>
         </div>
       </div>
     </Section>

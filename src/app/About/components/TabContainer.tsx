@@ -10,7 +10,7 @@ export default function App() {
 
   return (
     <div className="w-full h-full flex flex-col border-b border-slate-900">
-      <nav className='w-full h-[10vh] flex justify-around items-center border-b border-slate-900 overflow-hidden'>
+      <nav className='w-full h-[7%] flex justify-around items-center border-b border-slate-900 overflow-hidden'>
         <Reorder.Group
           as="ul"
           axis="x"
