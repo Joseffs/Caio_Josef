@@ -1,8 +1,11 @@
+// Dependências
 import { motion, Reorder } from "framer-motion";
-import { Ingredient } from "./ItemsTab";
-
+// Component About
+import { ItemsTab } from "./ItemsTab";
+// Tailwind
+const TabStyle = 'w-1/4 h-[80%] cursor-pointer flex justify-center items-center text-xs border-x border-slate-900 rounded-t-xl text-slate-500'
 interface Props {
-  item: Ingredient;
+  item: ItemsTab;
   isSelected: boolean;
   onClick: () => void;
 }
@@ -20,7 +23,7 @@ export const Tab = ({ item, onClick }: Props) => {
       }}
       exit={{ opacity: 0, y: 20, transition: { duration: 0.3 } }}
       whileDrag={{ backgroundColor: "rgb(2, 6, 23)" }}
-      className='w-1/4 h-full flex justify-center items-center text-xs border-x border-slate-900 text-slate-500'
+      className={TabStyle}
       onPointerDown={onClick}
     >
       <motion.span layout="position">{`${item.label}`}</motion.span>

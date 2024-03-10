@@ -3,7 +3,7 @@ import React from 'react'
 import { SiGithub, SiLinkedin, SiGmail } from "react-icons/si";
 // Tailwind
 const StyleFooter =
-  'fixed bottom-0 left-0 w-full h-[7vh] flex justify-center items-center border-t border-slate-900 z-50'
+  'fixed bottom-0 left-0 w-full h-[7vh] flex justify-center items-center bg-slate-950 border-t border-slate-900 z-50'
 const StyleSocial = 'relative w-full h-full flex justify-normal items-center'
 const StyleFind =
   'text-slate-500 text-xs sm:w-40 w-36 flex justify-center items-center h-full border-r border-slate-900'

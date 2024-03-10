@@ -1,7 +1,17 @@
+// Dependências
 import React, { useState } from 'react';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
-
+// Tailwind
+const Container = 'w-full h-full flex flex-row justify-around items-center divide-x divide-slate-900'
+const For = 'md:w-1/2 w-full h-3/5 flex justify-center items-center'
+const FormikDiv = 'w-1/2 h-3/5 flex justify-center items-center'
+const FormDiv = 'flex flex-col justify-center items-center'
+const Label = 'text-xs text-slate-500'
+const FieldItens = 'mb-5 sm:w-56 w-44 bg-transparent text-center border border-slate-900 rounded-3xl'
+const Erro = 'text-xs text-red-600'
+const Button = 'sm:mx-5 mx-2 sm:w-24 w-16 h-10 sm:text-sm text-xs border border-slate-900 rounded-3xl text-slate-500'
+const Pre = 'md:w-1/2 w-0 md:h-3/5 h-0 flex flex-col justify-center items-center overflow-hidden text-lg text-slate-500'
 interface FormData {
   name: string;
   email: string;
@@ -13,8 +23,8 @@ const ContactForm = () => {
 
   return (
     <>
-      <div className='w-full h-full flex flex-row justify-around items-center divide-x divide-slate-900'>
-        <div className='md:w-1/2 w-full h-3/5 flex justify-center items-center'>
+      <div className={Container}>
+        <div className={For}>
           <Formik
             initialValues={{ name: '', email: '', message: '' }}
             validationSchema={Yup.object({
@@ -30,7 +40,7 @@ const ContactForm = () => {
             onReset={() => {
               setFormData({ name: '', email: '', message: '' });
             }}
-            className='w-1/2 h-3/5 flex justify-center items-center'
+            className={FormikDiv}
             // Pass a function to set the form data
             onChange={(values: React.SetStateAction<FormData>) => {
               setFormData(values);
@@ -38,23 +48,23 @@ const ContactForm = () => {
           >
             {() => (
               <Form>
-                <div className='flex flex-col justify-center items-center'>
-                  <label htmlFor="name" className='text-xs text-slate-500'>Name &nbsp;</label>
-                  <Field name="name" type="text" className='mb-5 h-10 w-56 bg-transparent text-center border border-slate-900 rounded-3xl' />
-                  <ErrorMessage name="name" component="div" className='text-xs text-red-600'/>
+                <div className={FormDiv}>
+                  <label htmlFor="name" className={Label}>Name &nbsp;</label>
+                  <Field name="name" type="text" className={`h-10 ${FieldItens}`} />
+                  <ErrorMessage name="name" component="div" className={Erro}/>
                 </div>
-                <div className='flex flex-col justify-center items-center'>
-                  <label htmlFor="email" className='text-xs text-slate-500'>Email &nbsp;</label>
-                  <Field name="email" type="email" className='mb-5 h-10 w-56 bg-transparent text-center border border-slate-900 rounded-3xl'/>
-                  <ErrorMessage name="email" component="div" className='text-xs text-red-600'/>
+                <div className={FormDiv}>
+                  <label htmlFor="email" className={Label}>Email &nbsp;</label>
+                  <Field name="email" type="email" className={`h-10 ${FieldItens}`}/>
+                  <ErrorMessage name="email" component="div" className={Erro}/>
                 </div>
-                <div className='flex flex-col justify-center items-center'>
-                  <label htmlFor="message" className='text-xs text-slate-500'>Message &nbsp;</label>
-                  <Field name="message" as="textarea" className='mb-5 h-32 w-56 bg-transparent text-center border border-slate-900 rounded-3xl'/>
-                  <ErrorMessage name="message" component="div" className='text-xs text-red-600'/>
+                <div className={FormDiv}>
+                  <label htmlFor="message" className={Label}>Message &nbsp;</label>
+                  <Field name="message" as="textarea" className={`h-32 ${FieldItens}`}/>
+                  <ErrorMessage name="message" component="div" className={Erro}/>
                 </div>
-                <button type="submit" className='mx-5 w-24 h-10 border border-slate-900 rounded-3xl text-slate-500'>Submit</button>
-                <button type="reset" className='mx-5 w-24 h-10 border border-slate-900 rounded-3xl text-slate-500'>Reset</button>
+                <button type="submit" className={Button}>Submit</button>
+                <button type="reset" className={Button}>Reset</button>
               </Form>
             )}
           </Formik>
@@ -71,7 +81,7 @@ interface CodeDisplayProps {
 
 const CodeDisplay: React.FC<CodeDisplayProps> = ({ formData }) => {
   return (
-    <pre className='md:w-1/2 w-0 md:h-3/5 h-0 flex flex-col justify-center items-center overflow-hidden text-lg text-slate-500'>
+    <pre className={Pre}>
       <code>
         {JSON.stringify({
           ...formData,
