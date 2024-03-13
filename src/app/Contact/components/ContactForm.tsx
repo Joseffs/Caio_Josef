@@ -50,17 +50,17 @@ const ContactForm = () => {
               <Form>
                 <div className={FormDiv}>
                   <label htmlFor="name" className={Label}>Name &nbsp;</label>
-                  <Field name="name" type="text" className={`h-10 ${FieldItens}`} />
+                  <Field name="name" type="text" className={`sm:h-10 h-8 ${FieldItens}`} />
                   <ErrorMessage name="name" component="div" className={Erro}/>
                 </div>
                 <div className={FormDiv}>
                   <label htmlFor="email" className={Label}>Email &nbsp;</label>
-                  <Field name="email" type="email" className={`h-10 ${FieldItens}`}/>
+                  <Field name="email" type="email" className={`sm:h-10 h-8 ${FieldItens}`}/>
                   <ErrorMessage name="email" component="div" className={Erro}/>
                 </div>
                 <div className={FormDiv}>
                   <label htmlFor="message" className={Label}>Message &nbsp;</label>
-                  <Field name="message" as="textarea" className={`h-32 ${FieldItens}`}/>
+                  <Field name="message" as="textarea" className={`sm:h-32 h-28 ${FieldItens}`}/>
                   <ErrorMessage name="message" component="div" className={Erro}/>
                 </div>
                 <button type="submit" className={Button}>Submit</button>

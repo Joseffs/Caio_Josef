@@ -1,6 +1,6 @@
 //Tailwind 
 const Container = 'w-full h-full flex flex-col justify-center items-center text-slate-500'
-const Comment = 'w-full h-4/5 flex flex-col justify-center items-start xl:text-xs text-[9px] leading-3'
+const Comment = 'w-full h-4/5 flex flex-col justify-center items-start xlclear:text-xs text-[9px] leading-3'
 
 export const BioComponent = () => {
   return (
