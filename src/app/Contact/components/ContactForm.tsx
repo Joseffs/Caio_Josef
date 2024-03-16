@@ -33,7 +33,6 @@ const ContactForm = () => {
               message: Yup.string().required('Required'),
             })}
             onSubmit={(values, { setSubmitting }) => {
-              // Send the message to your email using a service like SendGrid or Nodemailer
               console.log(JSON.stringify(values));
               setSubmitting(false);
             }}
