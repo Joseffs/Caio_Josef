@@ -5,11 +5,12 @@ export interface ItemsTab {
   export const allIngredients = [
     { label: "Bio" },
     { label: "Education" },
-    { label: "Professional" }
+    { label: "Professional" },
+    { label: "Tecnologias" }
   ];
   
-  const [Bio, Education, Professional] = allIngredients;
-  export const initialTabs = [Bio, Education, Professional];
+  const [Bio, Education, Professional, Tecnologias] = allIngredients;
+  export const initialTabs = [Bio, Education, Professional, Tecnologias];
   
   export function getNextIngredient(
     itemsTab: ItemsTab[]

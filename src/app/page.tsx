@@ -35,8 +35,8 @@ export default function Home() {
             </span>
           </div>
         </article>
-        <div className={`lg:opacity-100 opacity-0 lg:w-1/2 w-0 ${StyleContainer}`}>
-          snake
+        <div className={`lg:opacity-100 opacity-0 lg:w-1/2 w-0 h-full flex justify-center items-center ${StyleContainer}`}>
+
         </div>
       </main>
     </Section>

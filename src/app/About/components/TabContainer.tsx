@@ -9,11 +9,12 @@ import { ItemsTab } from "./ItemsTab";
 import {BioComponent} from "./BioComponent";
 import {EducationComponent} from "./EducationComponent";
 import {ProfessionalComponent} from "./ProfessionalComponent";
+import TecnologiasComponent from "./TecnologiasComponent";
 // Tailwind
 const Container = "w-full h-full flex flex-col border-b border-slate-900"
 const Nav = 'w-full h-[7%] flex justify-around items-center border-b border-slate-900 overflow-hidden'
 const ReorderTab = 'w-full h-full flex justify-center items-center flex-grow flex-nowrap'
-const Main = 'flex justify-center items-center text-sm flex-grow'
+const Main = 'w-full h-[93%] flex justify-center items-center text-sm flex-grow'
 
 
 export default function App() {
@@ -36,6 +37,9 @@ export default function App() {
         break;
       case "Professional":
         setSelectedComponent(<ProfessionalComponent />);
+        break;
+      case "Tecnologias":
+        setSelectedComponent(<TecnologiasComponent />);
         break;
       default:
         setSelectedComponent(null);
