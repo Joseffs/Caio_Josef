@@ -7,9 +7,9 @@
 @tailwind utilities;
 
 :root {
---bg-slate-50: rgb(248 250 252);
---bg-slate-700: rgb(30 41 59);
---bg-slate-950: rgb(2 6 23);
+--slate-50: rgb(248 250 252);
+--slate-500: rgb(100 116 139);
+--slate-950: rgb(2 6 23);
 }
 
 body {
@@ -17,7 +17,44 @@ body {
   padding: 0;
   width: 100%;
   height: 100vh;
-  color: var(--bg-slate-50);
-  background: var(--bg-slate-950);
+  color: var(--slate-50);
+  background: var(--slate-950);
   font-family:'KodeMono';
+}
+
+.titles {
+  display: inline-block;
+  margin: 0px;
+  position: relative;
+  z-index: 2;
+}
+
+.TitlesP{
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.description{
+  background-color: var(--slate-500);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  clip-path: inset(50% 0 50%);
+  transition: clip-path .4s;
+}
+.descriptionP { 
+  text-transform: uppercase;
+  margin: 0px;
+  position: relative;
+  z-index: 1;
+}
+
+.descriptionP2 {
+  width: 30%;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
 }

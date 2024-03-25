@@ -26,7 +26,7 @@ const LinkStyle =
 const TextContainerStyle =
   'w-full relative z-10 block text-sm font-bold flex justify-center items-center text-slate-500 transition-colors duration-500 group-hover:text-neutral-50'
 const IconStyle =
-  'absolute z-0 h-10 w-32 rounded-lg object-cover md:h-48 md:w-64 text-teal-400'
+  'absolute z-0 h-10 w-32 rounded-lg object-cover md:h-48 md:w-64 text-slate-500'
 
 export const HoverImageLinks = () => {
   return (
