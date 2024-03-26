@@ -13,7 +13,7 @@ import TecnologiasComponent from "./TecnologiasComponent";
 // Tailwind
 const Container = "w-full h-full flex flex-col border-b border-slate-900"
 const Nav = 'w-full h-[7%] flex justify-around items-center border-b border-slate-900 overflow-hidden'
-const ReorderTab = 'w-full h-full flex justify-center items-center flex-grow flex-nowrap'
+const ReorderTab = 'w-full h-full flex justify-center items-center flex-grow flex-nowrap bg-slate-500'
 const Main = 'w-full h-[93%] flex justify-center items-center text-sm flex-grow'
 
 

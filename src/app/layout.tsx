@@ -3,6 +3,7 @@ import { Header } from "@/components/Nav/Header";
 import { Footer } from "@/components/Footer/Footer";
 
 import "./globals.css";
+import Nav from "@/components/Nav/Nav";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,8 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className="overflow-hidden">
         <Header />
+        <Nav />
         {children}
         <Footer />
       </body>

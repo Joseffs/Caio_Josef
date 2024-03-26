@@ -10,6 +10,7 @@
 --slate-50: rgb(248 250 252);
 --slate-500: rgb(100 116 139);
 --slate-950: rgb(2 6 23);
+--neutral-950: rgb(10 10 10);
 }
 
 body {
@@ -20,6 +21,27 @@ body {
   color: var(--slate-50);
   background: var(--slate-950);
   font-family:'KodeMono';
+}
+
+.introduction{
+  margin-top: 7vh;
+  height: 86%;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  background-color: var(--slate-500);
+}
+.introduction svg{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: calc(100% + 300px);
+}
+
+.introduction svg path{
+  fill: var(--slate-500);
 }
 
 .titles {

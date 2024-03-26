@@ -8,7 +8,7 @@ const StyleSocial = 'relative w-full h-full flex justify-normal items-center'
 const StyleFind =
   'text-slate-500 text-xs sm:w-40 w-36 flex justify-center items-center h-full border-r border-slate-900'
 const StyleLink =
-  'h-full text-slate-500 text-xs flex justify-center items-center border-slate-900'
+  'h-full text-slate-500 hover:text-slate-950 hover:bg-slate-500 text-xs flex justify-center items-center border-slate-900 duration-300 group'
 
 export const Footer = () => {
   return (
@@ -24,9 +24,9 @@ export const Footer = () => {
           <a href='mailto:josef.devs@gmail.com' target='_blank' className={`w-8 border-r ${StyleLink}`}>
           <SiGmail  size={15} />
           </a>
-          <a href='https://github.com/Joseffs' target='_blank' className={`absolute right-0 w-28 border-l ${StyleLink}`}>
+          <a href='https://github.com/Joseffs' target='_blank' className={`absolute right-0 w-28 font-extrabold border-l ${StyleLink}`}>
             @Joseffs
-            <span className='ml-3 text-slate-500'>
+            <span className='ml-3 text-slate-500 group-hover:text-slate-950'>
               <SiGithub size={15}/>
             </span>
           </a>

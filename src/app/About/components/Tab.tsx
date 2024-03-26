@@ -3,7 +3,7 @@ import { motion, Reorder } from "framer-motion";
 // Component About
 import { ItemsTab } from "./ItemsTab";
 // Tailwind
-const TabStyle = 'w-1/4 h-[80%] cursor-pointer flex justify-center items-center text-xs border-x border-slate-900 rounded-t-xl text-slate-500'
+const TabStyle = 'w-1/4 h-full cursor-pointer flex justify-center items-center text-[12px] border-x border-slate-950 text-slate-950'
 interface Props {
   item: ItemsTab;
   isSelected: boolean;
@@ -22,7 +22,7 @@ export const Tab = ({ item, onClick }: Props) => {
         transition: { duration: 0.15 }
       }}
       exit={{ opacity: 0, y: 20, transition: { duration: 0.3 } }}
-      whileDrag={{ backgroundColor: "rgb(2, 6, 23)" }}
+      whileDrag={{ backgroundColor: "rgb(71 85 105)" }}
       className={TabStyle}
       onPointerDown={onClick}
     >
