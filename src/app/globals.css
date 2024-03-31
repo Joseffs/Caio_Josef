@@ -44,6 +44,12 @@ body {
   fill: var(--slate-500);
 }
 
+.Abouts {
+  background-image: url('./../assets/cj.png');
+  background-position: center;
+  background-size: cover;
+}
+
 .titles {
   display: inline-block;
   margin: 0px;

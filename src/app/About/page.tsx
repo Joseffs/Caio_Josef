@@ -1,6 +1,4 @@
 'use client'
-// Dependências
-
 // Components Reutilizaveis
 import Section from '@/utils/Section'
 // Components About

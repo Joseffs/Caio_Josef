@@ -3,7 +3,7 @@
 import React from 'react'
 
 
-const Container = 'absolute top-[3px] h-full w-full z-20 pointer-events-none'
+const Container = 'absolute top-0 h-full w-full z-20 pointer-events-none'
 const DescriptionP = 'description pl-[10%] sm:pr-[20%] pr-[10%] w-full h-1/4 flex-row text-neutral-950 font-extrabold'
 
 export default function Description({
