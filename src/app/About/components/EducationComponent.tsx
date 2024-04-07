@@ -9,8 +9,8 @@ export const EducationComponent = () => {
             <p>&nbsp;1&nbsp;&nbsp;{'/**'}</p>
             <p>&nbsp;2&nbsp;&nbsp;&nbsp;{'*'}&nbsp;Education</p>
             <p>&nbsp;3&nbsp;&nbsp;&nbsp;{'*'}&nbsp;&nbsp;</p>
-            <p>&nbsp;4&nbsp;&nbsp;&nbsp;{'*'}&nbsp;&nbsp;IBMR</p>
-            <p>&nbsp;5&nbsp;&nbsp;&nbsp;{'*'}&nbsp;&nbsp;Cursando Sistemas para Internet 4/5</p>
+            <p>&nbsp;4&nbsp;&nbsp;&nbsp;{'*'}&nbsp;&nbsp;Descomplica</p>
+            <p>&nbsp;5&nbsp;&nbsp;&nbsp;{'*'}&nbsp;&nbsp;Cursando Ciência da Computação</p>
             <p>&nbsp;6&nbsp;&nbsp;&nbsp;{'*'}&nbsp;&nbsp;</p>
             <p>&nbsp;7&nbsp;&nbsp;&nbsp;{'*'}&nbsp;&nbsp;Dio:</p>
             <p>&nbsp;8&nbsp;&nbsp;&nbsp;{'*'}&nbsp;&nbsp;Bootcamp Impulso Javascript Evolution</p>
