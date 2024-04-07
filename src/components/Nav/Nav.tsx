@@ -9,10 +9,10 @@ import { IoClose } from "react-icons/io5"
 
 // Style Class Tailwind
 const navButton =
-  'absolute right-10 top-0 w-8 h-8 flex justify-center items-center sm:opacity-0 opacity-100 sm:-z-10 z-50'
+  'absolute right-10 top-0 w-10 h-[7vh] flex justify-center items-center sm:opacity-0 opacity-100 sm:-z-10 z-50'
 const navContainer =
-  'w-10 h-10 flex justify-center items-center group z-50 animate'
-const iconContainer = 'relative w-4 h-4 text-slate-500 hover:text-slate-50 duration-300'
+  'w-10 h-full flex justify-center items-center group z-50'
+const iconContainer = 'relative w-10 h-full text-slate-500 hover:text-slate-50 flex justify-center items-center duration-300'
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false)
