@@ -7,13 +7,13 @@ import Social from './components/Social'
 import { SiHtml5, SiSass, SiReact, SiTailwindcss, SiTypescript, SiFigma, SiNodedotjs, SiMysql } from "react-icons/si"
 // Styles Class Tailwind
 const Main =
-  'relative py-10 w-full h-full flex md:flex-row flex-col justify-center items-center overflow-hidden'
+  'relative py-[7vh] w-full h-full flex md:flex-row flex-col justify-center items-center overflow-hidden'
 const ContainerIcons = 'absolute py-[7vh] top-0 left-0 sm:w-56 w-full h-full flex sm:flex-row flex-nowrap flex-col justify-center items-center border-r border-slate-900'
 const FlexIcons = 'sm:w-12 w-0 sm:h-full h-0 text-slate-500 flex flex-col justify-around items-center sm:border-r border-0 border-slate-900 overflow-hidden'
 const ContainerAbout = 'sm:w-44 w-full h-full flex flex-col justify-start items-start'
 const TextAbout = 'w-full h-[7%] text-sm text-slate-500 flex justify-center items-center border-b border-slate-900'
 const ImgAbout = 'w-full sm:h-[93%] h-0'
-const ContainerLink = 'relative sm:mt-0 mt-[7vh] sm:pl-56 pl-0 w-full h-full z-10'
+const ContainerLink = 'relative sm:mt-0 mt-[10%] sm:pl-56 pl-0 w-full h-full z-10'
 
 export default function Contact() {
   return (
