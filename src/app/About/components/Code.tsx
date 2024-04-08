@@ -1,5 +1,5 @@
 // Tailwind
-const Container = 'p-10 ml-[5%] w-[95%] h-full border-l border-slate-900 flex flex-col justify-center items-center text-xs'
+const Container = 'p-10 ml-[5%] w-[90%] h-full border-l border-slate-900 flex flex-col justify-center items-center text-xs'
 const Text = 'w-4/5 h-1/5 text-xs text-slate-500 flex justify-center items-center'
 const CodeStyle = 'pl-5 w-full h-4/5 xl:text-xs text-[8px] flex flex-col justify-center items-center border border-slate-900 bg-neutral-950 rounded-2xl overflow-hidden'
 
