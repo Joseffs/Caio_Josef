@@ -4,7 +4,7 @@ import Section from '@/utils/Section'
 //Icons
 import { SiLinkedin , SiWhatsapp, SiTelegram } from 'react-icons/si'
 // Styles Class Tailwind
-const Main = 'py-10 relative w-4/5 h-full flex md:flex-row flex-col justify-center items-center overflow-hidden'
+const Main = 'py-[7vh] relative w-4/5 h-[86vh] flex md:flex-row flex-col justify-center items-center overflow-hidden'
 const StyleContainer = 'md:h-1/2 h-1/2 flex flex-col justify-end items-center'
 const StyleText = 'ml-3 w-full h-1/2 flex flex-col justify-center items-center'
 const ContainerLinks = 'w-4/5 h-20 text-4xl text-orange-500/20 flex flex-row justify-around items-center'
