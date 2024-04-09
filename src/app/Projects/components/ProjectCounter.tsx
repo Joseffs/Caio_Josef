@@ -21,9 +21,9 @@ const ProjectCounter = ({
     <>
       <motion.div
         key={index}
-        initial={{ y: 400 }}
+        initial={{ y: 300 }}
         animate={{ y: 0 }}
-        exit={{ y: 400 }}
+        exit={{ y: 300 }}
         transition={{ duration: 1.5 }}
         className={CounterStyle}
       >
@@ -40,9 +40,9 @@ const ProjectCounter = ({
       <>
         <motion.div
           key={index}
-          initial={{ y: -400 }}
+          initial={{ y: -300 }}
           animate={{ y: 0 }}
-          exit={{ y: 400 }}
+          exit={{ y: 320 }}
           transition={{ duration: 1.5 }}
           className={CounterStyle}
         >
@@ -56,7 +56,7 @@ const ProjectCounter = ({
   return (
     <div className={Container}>
       {leftDivs}
-      <div style={{ height: '400px' }}></div>
+      <div style={{ height: '300px' }}></div>
       {rightDivs}
     </div>
   )
