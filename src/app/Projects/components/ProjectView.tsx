@@ -9,9 +9,9 @@ import NextProjectButton from './NextProjectButtom'
 import worksData from '@/data/data'
 // Style Class Tailwind
 const ContainerView =
-  'w-full h-full flex justify-center items-center overflow-hidden relative'
+  'relative w-full h-full flex justify-center items-center overflow-hidden relative'
 const MotionStyle = 'w-full h-full flex items-center justify-center'
-const CounterContainer = 'absolute bottom-20 right-10 h-auto w-8'
+const CounterContainer = 'absolute bottom-1/3 sm:right-10 right-5 h-auto w-8'
 
 export const ProjectView = () => {
   const [currentProjectIndex, setCurrentProjectIndex] = useState(0)

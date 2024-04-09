@@ -4,7 +4,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 // Style Class tailwind
-const Container = 'w-full h-full flex flex-col justify-center items-center'
+const Container = 'w-full h-1/3 flex flex-col justify-center items-center'
 const CounterStyle = 'w-6 h-2 flex flex-row justify-around items-center'
 const CouterPoints = 'w-1 h-1 rounded-full bg-slate-500'
 
@@ -21,9 +21,9 @@ const ProjectCounter = ({
     <>
       <motion.div
         key={index}
-        initial={{ y: 200 }}
+        initial={{ y: 100 }}
         animate={{ y: 0 }}
-        exit={{ y: 200 }}
+        exit={{ y: 100 }}
         transition={{ duration: 1.5 }}
         className={CounterStyle}
       >
@@ -40,9 +40,9 @@ const ProjectCounter = ({
       <>
         <motion.div
           key={index}
-          initial={{ y: -200 }}
+          initial={{ y: -100 }}
           animate={{ y: 0 }}
-          exit={{ y: 200 }}
+          exit={{ y: 100 }}
           transition={{ duration: 1.5 }}
           className={CounterStyle}
         >
@@ -56,7 +56,7 @@ const ProjectCounter = ({
   return (
     <div className={Container}>
       {leftDivs}
-      <div style={{ height: '200px' }}></div>
+      <div style={{ height: '100px' }}></div>
       {rightDivs}
     </div>
   )
