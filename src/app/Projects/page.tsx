@@ -2,7 +2,7 @@
 // Components Reutilizaveis
 import Section from '@/utils/Section'
 // Components Project
-
+import { ProjectView } from './components/ProjectView'
 // react-icons
 import { SiHtml5, SiSass, SiReact, SiTailwindcss, SiTypescript, SiFigma, SiNodedotjs, SiMysql } from "react-icons/si"
 // Styles Class Tailwind
@@ -38,7 +38,7 @@ export default function Project() {
           </div>  
         </div>
         <div className={ContainerLink}>
-
+          <ProjectView />
         </div>
       </div>
     </Section>
