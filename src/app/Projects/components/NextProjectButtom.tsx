@@ -6,7 +6,7 @@ import { FaArrowUpLong } from 'react-icons/fa6'
 
 // Style Class Tailwind
 const ButtonNext =
-  'absolute flex flex-col justify-center items-center bottom-4 left-1/2 right-1/2 transform -translate-x-1/2 space-x-4 text-slate-500 group'
+  'absolute flex flex-col justify-center items-center top-5 left-1/2 right-1/2 transform -translate-x-1/2 space-x-4 text-slate-500 group'
 
 const NextProjectButton = ({ onClick }: { onClick: () => void }) => {
   return (
@@ -17,7 +17,7 @@ const NextProjectButton = ({ onClick }: { onClick: () => void }) => {
       onClick={onClick}
       className={ButtonNext}
     >
-      <FaArrowUpLong size={15} className="ml-5 text-slate-500 group-hover:text-slate-50 duration-300" />
+      <FaArrowUpLong size={15} className="ml-[17px] text-slate-500 group-hover:text-slate-50 duration-300" />
       <p className="font-medium text-xs group-hover:text-slate-50 duration-300">Next Project</p>
     </motion.button>
   )

@@ -11,7 +11,7 @@ import worksData from '@/data/data'
 const ContainerView =
   'w-full h-full flex justify-center items-center overflow-hidden relative'
 const MotionStyle = 'w-full h-full flex items-center justify-center'
-const CounterContainer = 'absolute bottom-10 right-10 h-auto w-8'
+const CounterContainer = 'absolute bottom-20 right-10 h-auto w-8'
 
 export const ProjectView = () => {
   const [currentProjectIndex, setCurrentProjectIndex] = useState(0)
