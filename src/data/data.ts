@@ -1,79 +1,68 @@
 interface Project {
     nomeProjeto: string
-    descricao: string
-    imagens: string[]
+    bg: string
     githubLink: string
     webLink: string
   }
   
   const worksData: Project[] = [
     {
-      nomeProjeto: 'Projeto 1',
-      descricao: 'Descrição do Projeto 1.',
-      imagens: ['imagem1.jpg', 'imagem2.jpg'],
+      nomeProjeto: 'Portfólio',
+      bg: 'project1',
       githubLink: 'https://github.com/seuusuario/projeto1',
       webLink: 'https://www.projeto1.com',
     },
     {
       nomeProjeto: 'Projeto 2',
-      descricao: 'Descrição do Projeto 2.',
-      imagens: ['imagem3.jpg', 'imagem4.jpg'],
+      bg: 'project1',
       githubLink: 'https://github.com/seuusuario/projeto2',
       webLink: 'https://www.projeto2.com',
     },
     {
       nomeProjeto: 'Projeto 3',
-      descricao: 'Descrição do Projeto 2.',
-      imagens: ['imagem3.jpg', 'imagem4.jpg'],
+      bg: 'project1',
       githubLink: 'https://github.com/seuusuario/projeto2',
       webLink: 'https://www.projeto2.com',
     },
     {
       nomeProjeto: 'Projeto 4',
-      descricao: 'Descrição do Projeto 2.',
-      imagens: ['imagem3.jpg', 'imagem4.jpg'],
+      bg: 'project1',
       githubLink: 'https://github.com/seuusuario/projeto2',
       webLink: 'https://www.projeto2.com',
     },
     {
-      nomeProjeto: 'Projeto 5',
-      descricao: 'Descrição do Projeto 1.',
-      imagens: ['imagem1.jpg', 'imagem2.jpg'],
-      githubLink: 'https://github.com/seuusuario/projeto1',
-      webLink: 'https://www.projeto1.com',
+      nomeProjeto: 'Portfólio',
+      bg: 'project5',
+      githubLink: 'https://github.com/Joseffs/Caio_Josef',
+      webLink: 'https://caio-josef.vercel.app/',
     },
     {
       nomeProjeto: 'Projeto 6',
-      descricao: 'Descrição do Projeto 2.',
-      imagens: ['imagem3.jpg', 'imagem4.jpg'],
+      bg: 'project1',
       githubLink: 'https://github.com/seuusuario/projeto2',
       webLink: 'https://www.projeto2.com',
     },
     {
       nomeProjeto: 'Projeto 7',
-      descricao: 'Descrição do Projeto 2.',
-      imagens: ['imagem3.jpg', 'imagem4.jpg'],
+      bg: 'project1',
       githubLink: 'https://github.com/seuusuario/projeto2',
       webLink: 'https://www.projeto2.com',
     },
     {
       nomeProjeto: 'Projeto 8',
-      descricao: 'Descrição do Projeto 2.',
-      imagens: ['imagem3.jpg', 'imagem4.jpg'],
+      bg: 'project1',
       githubLink: 'https://github.com/seuusuario/projeto2',
       webLink: 'https://www.projeto2.com',
     },
     {
       nomeProjeto: 'Projeto 9',
-      descricao: 'Descrição do Projeto 1.',
-      imagens: ['imagem1.jpg', 'imagem2.jpg'],
+      bg: 'project1',
       githubLink: 'https://github.com/seuusuario/projeto1',
       webLink: 'https://www.projeto1.com',
     },
     {
       nomeProjeto: 'Projeto 10',
-      descricao: 'Descrição do Projeto 2.',
-      imagens: ['imagem3.jpg', 'imagem4.jpg'],
+      bg: 'project1',
       githubLink: 'https://github.com/seuusuario/projeto2',
       webLink: 'https://www.projeto2.com',
     },

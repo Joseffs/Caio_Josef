@@ -1,65 +1,23 @@
-'use client'
-// Dependências
 import React from 'react'
-import { motion } from 'framer-motion'
 
-// Style Class tailwind
-const Container = 'w-full h-1/3 flex flex-col justify-center items-center'
-const CounterStyle = 'w-6 h-2 flex flex-row justify-around items-center'
-const CouterPoints = 'w-1 h-1 rounded-full bg-slate-500'
+const ProjectCounter = ({ projectIndex, totalProjects } : { projectIndex : number, totalProjects : number }) => {
+  // Calcula a largura de cada traço com base no total de projetos
+  const lineWidth = `${100 / totalProjects}%`
 
-const ProjectCounter = ({
-  projectIndex,
-  totalProjects,
-}: {
-  projectIndex: number
-  totalProjects: number
-}) => {
-  const numeroDoProjeto = projectIndex + 1
+  // Array para armazenar os traços
+  const lines = []
 
-  const leftDivs = Array.from({ length: numeroDoProjeto }, (_, index) => (
-    <>
-      <motion.div
-        key={index}
-        initial={{ y: 100 }}
-        animate={{ y: 0 }}
-        exit={{ y: 100 }}
-        transition={{ duration: 1.5 }}
-        className={CounterStyle}
-      >
-        <div className={CouterPoints} />
-        <div className={CouterPoints} />
-        <div className={CouterPoints} />
-      </motion.div>
-    </>
-  ))
+  // Preenche o array com os traços ativados até o índice do projeto atual
+  for (let i = 0; i < totalProjects; i++) {
+    const isActive = i <= projectIndex
+    const lineStyle = {
+      width: lineWidth,
+      backgroundColor: isActive ? 'rgb(100 116 139)' : 'rgb(30 41 59)',
+    }
+    lines.push(<div key={i} className="h-2 rounded-xl duration-500" style={lineStyle}></div>)
+  }
 
-  const rightDivs = Array.from(
-    { length: totalProjects - numeroDoProjeto },
-    (_, index) => (
-      <>
-        <motion.div
-          key={index}
-          initial={{ y: -100 }}
-          animate={{ y: 0 }}
-          exit={{ y: 100 }}
-          transition={{ duration: 1.5 }}
-          className={CounterStyle}
-        >
-          <div className={CouterPoints} />
-          <div className={CouterPoints} />
-          <div className={CouterPoints} />
-        </motion.div>
-      </>
-    ),
-  )
-  return (
-    <div className={Container}>
-      {leftDivs}
-      <div style={{ height: '100px' }}></div>
-      {rightDivs}
-    </div>
-  )
+  return <div className="flex">{lines}</div>
 }
 
 export default ProjectCounter
